@@ -93,7 +93,7 @@ def Q55(text):
     if (text!=""):
 
         img, label = testset[int(float(text))]
-        out = model5(img.reshape(1, 3, 32`, 32))
+        out = model5(img.reshape(1, 3, 32, 32))
 
         out = out.detach().numpy()
 
